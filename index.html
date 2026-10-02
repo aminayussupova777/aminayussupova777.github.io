@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amina Yussupova – Mechanical Engineering Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=Source+Serif+4:wght@400;600&display=swap">
+<style>
+:root{--bg:#f1f4f7;--ink:#13203a;--mute:#566277;--line:#b9c4d2;--acc:#1c5dc0;--panel:#e5eaf0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1826;--ink:#e6ecf5;--mute:#93a1b8;--line:#2d3b52;--acc:#6ba4ff;--panel:#16233a}}
+:root[data-theme="dark"]{--bg:#0f1826;--ink:#e6ecf5;--mute:#93a1b8;--line:#2d3b52;--acc:#6ba4ff;--panel:#16233a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Source Serif 4",Georgia,serif}
+a{color:var(--acc)}
+a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3,.sans{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+nav{display:flex;justify-content:space-between;gap:1rem;padding:1.25rem 0;border-bottom:1px solid var(--line);font:600 .95rem Archivo,Arial,sans-serif}
+nav a{color:var(--ink);text-decoration:none;margin-left:1.25rem}
+nav a:first-child{margin-left:0}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:center;padding:4rem 0 3.5rem}
+h1{font-size:clamp(2.6rem,7vw,4.8rem);line-height:1;margin:0 0 1.25rem;font-weight:800;font-stretch:80%;letter-spacing:-.02em}
+.hero p{max-width:34rem;color:var(--mute);margin:0 0 1.5rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;background:var(--acc);color:var(--bg);font:600 .95rem Archivo,Arial,sans-serif;text-decoration:none;margin-right:.5rem}
+.btn.alt{background:none;color:var(--ink);border:1px solid var(--ink)}
+.drawing{width:100%;max-width:26rem;justify-self:center;color:var(--ink)}
+.drawing text{font:600 11px Archivo,Arial,sans-serif;fill:var(--mute)}
+#gear{transform-origin:150px 150px;animation:spin 60s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){#gear{animation:none}}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font-size:1.9rem;margin:0 0 2rem;font-weight:700;font-stretch:85%}
+.proj{display:grid;grid-template-columns:1fr 17rem;gap:2rem;padding:1.75rem 0;border-bottom:1px solid var(--line)}
+.proj:last-child{border-bottom:0}
+.proj h3{margin:0 0 .5rem;font-size:1.35rem;font-weight:700}
+.proj p{margin:0 0 .75rem;max-width:36rem}
+dl{margin:0;background:var(--panel);padding:1rem 1.1rem;font:400 .9rem/1.5 Archivo,Arial,sans-serif;align-self:start}
+dt{font-weight:700;margin-top:.6rem}
+dt:first-child{margin-top:0}
+dd{margin:0;color:var(--mute)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.5rem 2rem}
+.skills h3{font-size:1rem;margin:0 0 .4rem}
+.skills p{margin:0;color:var(--mute);font-size:.98rem}
+.exp{display:grid;grid-template-columns:9rem 1fr;gap:.5rem 1.5rem;margin-bottom:1.25rem}
+.exp b{font-family:Archivo,Arial,sans-serif}
+.exp span{color:var(--mute);font:400 .9rem Archivo,Arial,sans-serif}
+footer{padding:3rem 0 4rem;border-top:1px solid var(--line)}
+footer h2{margin-bottom:.75rem}
+@media (max-width:760px){.hero,.proj,.exp{grid-template-columns:1fr}.hero{padding-top:2.5rem}nav a{margin-left:.9rem}}
+ul{margin:.5rem 0 0;padding-left:1.1rem;max-width:44rem}li{margin-bottom:.4rem}
+.job{padding:1.5rem 0;border-bottom:1px solid var(--line)}.job:last-of-type{border-bottom:0}
+.job h3{margin:0;font-size:1.25rem;font-weight:700}
+.meta{font:400 .92rem Archivo,Arial,sans-serif;color:var(--mute);margin:.15rem 0 .5rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="#top">Amina Yussupova</a><div><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
+<header class="hero" id="top">
+<div>
+<h1>Mechanical engineer who tests, models, and tunes.</h1>
+<p>I'm studying mechanical engineering at UC Berkeley (expected May 2029). I've done simulation and CAD work at two engineering internships in Kazakhstan, and I tune engines on the Berkeley Formula Racing engine subteam.</p>
+<a class="btn" href="#experience">See my experience</a><a class="btn alt" href="#contact">Get in touch</a>
+</div>
+<svg class="drawing" viewBox="0 0 300 320" role="img" aria-label="Technical drawing of a spur gear with dimension lines">
+<g fill="none" stroke="currentColor" stroke-width="1.2">
+<path id="gear" d=""/><circle cx="150" cy="150" r="22"/>
+<path stroke="var(--acc)" stroke-dasharray="6 3 1 3" d="M10 150H290M150 10V290"/>
+<path stroke="var(--mute)" d="M40 292H260M40 286v12M260 286v12"/>
+</g>
+<text x="150" y="311" text-anchor="middle">Ø 220 mm, 24 teeth, module 8</text>
+</svg>
+</header>
+
+<section id="education"><h2>Education</h2>
+<div class="job"><h3>University of California, Berkeley</h3><div class="meta">Berkeley, California · Expected May 2029</div><p style="margin:0">Bachelor of Science in Mechanical Engineering</p></div>
+</section>
+
+<section id="experience"><h2>Experience</h2>
+<div class="job"><h3>Mechanical Engineering Intern, Kazatomprom</h3><div class="meta">Astana, Kazakhstan · May 2026 – Aug. 2026</div><ul><li>Built 3D models of process equipment and piping in Siemens NX for remotely operated chemical facilities.</li><li>Modeled pumps, compressors, valves, and other mechanical equipment to represent facility layouts and equipment connections.</li><li>Analyzed equipment under static and dynamic loading conditions, including cases of excessive pump vibration.</li><li>Tested mechanical designs through simulation and adjusted model parameters based on system response.</li><li>Analyzed test data to validate designs and support changes to mechanical and instrumentation systems.</li></ul></div><div class="job"><h3>Mechanical Engineering Intern, Kazakhstan Engineering</h3><div class="meta">Astana, Kazakhstan · May 2025 – Aug. 2025</div><ul><li>Performed finite element analysis in ANSYS Mechanical to evaluate structural loads and stresses in aircraft and UAV components.</li><li>Built MATLAB models of aircraft and UAV dynamics to study vehicle response across different operating conditions.</li><li>Simulated steady-state behavior and frequency response to evaluate vehicle stability and handling.</li><li>Adjusted model parameters and compared simulation results to evaluate different design choices.</li><li>Analyzed suspension kinematics to study component movement and suspension behavior.</li></ul></div>
+</section>
+
+<section id="projects"><h2>Projects</h2>
+<div class="job"><h3>Berkeley Formula Racing, Engine Subteam: Exhaust, Shifting and Dyno Tuning</h3><div class="meta">Berkeley, California · Sept. 2025 – present</div><ul><li>Optimized engine performance using an in-house water-brake dynamometer across different operating conditions.</li><li>Calculated engine torque across the RPM range using load-cell measurements from dyno testing.</li><li>Tuned volumetric efficiency, ignition timing, and fuel mapping using ECU calibration software.</li><li>Adjusted cold-start, idle, and transient-response settings during engine testing.</li><li>Analyzed dyno and engine data in MATLAB to compare test runs and evaluate changes in engine performance.</li></ul></div><div class="job"><h3>AI Engineer, SYNK AI</h3><div class="meta">Remote · Sept. 2026 – present</div><ul><li>Engineered generative AI pipelines that automate the design and configuration of immersive virtual venues.</li><li>Prototyped, tested, and iterated on workflows to generate venue layouts from natural-language prompts.</li><li>Analyzed model outputs and user feedback to identify failure modes and drive improvements in reliability.</li></ul></div>
+</section>
+
+<section id="skills"><h2>Technical skills</h2>
+<div class="skills">
+<div><h3>CAD</h3><p>SolidWorks, AutoCAD, Siemens NX, Ansys Mechanical</p></div>
+<div><h3>Manufacturing</h3><p>3D printing, soldering, prototyping, fluid mechanics</p></div>
+<div><h3>Languages</h3><p>Python, MATLAB, JavaScript, React Native, Three.js</p></div>
+<div><h3>Hardware</h3><p>FLIR, Arduino, Raspberry Pi, Ender 3 Pro</p></div>
+</div>
+</section>
+
+<footer id="contact"><h2>Contact</h2>
+<p>Email me at <a href="mailto:aminayussupova@berkeley.edu">aminayussupova@berkeley.edu</a>.</p>
+</footer>
+</div>
+<script>
+(function(){
+var n=24,ro=100,rr=84,pts=[],c=150;
+for(var i=0;i<n;i++){
+var a=i*2*Math.PI/n,w=Math.PI/n;
+[[-0.45,rr],[-0.25,ro],[0.25,ro],[0.45,rr]].forEach(function(p){
+var t=a+p[0]*w*2;pts.push((c+p[1]*Math.cos(t)).toFixed(1)+" "+(c+p[1]*Math.sin(t)).toFixed(1));});
+}
+document.getElementById("gear").setAttribute("d","M"+pts.join("L")+"Z");
+})();
+</script>
+</body>
+</html>
